@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Dhurjati&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #de0611;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 60px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Hide default file input styles */
+input[type="file"] {
+    display: none;
+}
+
+/* Style the custom file input */
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #b76262;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-file-upload:hover {
+    background-color: #ffa500;
+}
+
+.upload-container{
+    margin-top: 50px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #de0611;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+Input {
+    Display: none;
+    }
+
+Label {
+    Height:  100px;
+    Width: 200px;
+    Border-radius: 6px;
+    Border: 1px dashed #999;
+    text-align: center;
+    top: -20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+    
+Label:hover {
+      Color: #de0611;
+      Border: 1px dashed #de0611;
+    }
+    
+    
+
+button:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    form {
+        width: 50%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Dhurjati&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/* Form styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Hide default file input styles */
+input[type="file"] {
+    display: none;
+}
+
+/* Style the custom file input */
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #b76262;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-file-upload:hover {
+    background-color: #ffa500;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #de0611;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+.portfolio {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px; 
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 20px;
+}
+
+.note {
+    text-align: center;
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    padding: 40px; 
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 25px;
+    }
+}

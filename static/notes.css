@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Dhurjati&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.title {
+    color: rgb(255, 0, 0);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.note ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.5;
+    list-style-type: disc;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 24px;
+    }
+}

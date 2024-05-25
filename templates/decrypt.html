@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/decrypt.css">
+    <title>Decrypt</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="font-family: 'Archivo Black', sans-serif;">Decrypt Video</h2>
+
+        <div class="upload-container">
+            <form id="encryptForm" action="/decrypt" method="post" enctype="multipart/form-data">
+                <input id="encryptFile" type="file" name="file">
+                <label for="encryptFile">Upload File</label>
+                <button type="submit">Decrypt</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("encryptForm").addEventListener("submit", function(event) {
+            var fileInput = document.getElementById('encryptFile');
+            if (fileInput.files.length === 0) {
+                alert("Please choose a file");
+                event.preventDefault(); 
+            }
+        });
+    </script>
+
+</body>
+
+</html>
