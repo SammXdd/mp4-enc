@@ -44,6 +44,21 @@ input[type="file"] {
     background-color: #ffa500;
 }
 
+.github{
+    text-align: center;
+    position: fixed;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+}
+
+.gittext{
+    text-decoration: none;
+    font-family: 'Dhurjati', sans-serif;
+    color: #de0611;
+    font-size: 19px;
+}
+
 button {
     padding: 10px 20px;
     background-color: #de0611;
